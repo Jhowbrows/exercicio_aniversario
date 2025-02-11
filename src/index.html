@@ -8,16 +8,71 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="images/JW.jpg" alt="">
             <p class="hero__text">
-                O Evento de aniversario vai Começar em <span></span>
+                O Evento de aniversario vai Começar em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Minha Casa
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        Grátis - Se for Conhecido
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        26/11/2025 ás 16hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">Confirme  sua presença</a>
+            </div>
         </div>
     </header>
+    <section class="event event--game">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Jogo Favorito</h2>
+                <p class="event__details__description">Nier Replicant é um jogo muito importante para mim. Foi um game que mexeu bastante comigo devido a sua narrativa, Trilha sonóra impecável e modelo de gameplay bem intuitivo</p>
+            </div>
+            <img class="event__image" src="images/Nier Replicant.jpg" alt="Nier Replicant">
+        </div>
+    </section>
+    <section class="event event--movie event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Filme Favorito</h2>
+                <p class="event__details__description">O castelo animado é um dos primeiros filmes do studio Ghibli que eu assisti, e com certeza um dos mais marcantes devido a sua tematica e trilha sonora extremamente cativante.</p>
+            </div>
+            <img class="event__image" src="images/castelo animado.jpg" alt="Nier Replicant">
+        </div>
+    </section>
+    <section class="event event--hobbie">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Meu hobbie</h2>
+                <p class="event__details__description">Meu hobbie favorito com certeza é tocar guitarra e outros instrumentos no geral, sempre foi algo que gostei de fazer devido a como essa atividade é relaxante. Comecei com violão, fui para guitarra, depois piano/teclado e agora violino e Ukulele.</p>
+            </div>
+            <img class="event__image" src="images/guitarra.jpg" alt="Nier Replicant">
+        </div>
+    </section>
+    <section class="event event--Desire event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Maior Desejo</h2>
+                <p class="event__details__description">Meu Desejo desde pequeno sempre foi ir ao japão algum dia. Como sempre fui uma pessoa ligada aos animes e mangás, então o desejo foi meio que algo ja esperado.</p>
+            </div>
+            <img class="event__image" src="images/japão.jpg" alt="Nier Replicant">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

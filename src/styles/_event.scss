@@ -1,0 +1,67 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+    
+
+    &--game {
+        background-image: linear-gradient(to bottom, variables.$black, variables.$red);
+    }
+
+    &--movie {
+        background-image: linear-gradient(to bottom, variables.$red, variables.$black);
+    }
+
+    &--hobbie {
+        background-image: linear-gradient(to bottom, variables.$black, variables.$red);
+    }
+
+    &--Desire {
+        background-image: linear-gradient(to bottom, variables.$red, variables.$black);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex;
+        gap: 40px;
+
+    }
+    &__image {
+        width: 100%;
+        height: 400px;
+    }
+
+    &__details {
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+
+        &__image {
+            width: 100%;
+        }
+
+        &__details {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
